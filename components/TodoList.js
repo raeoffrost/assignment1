@@ -25,9 +25,15 @@ const TodoList = ({ items, onToggle, onDelete }) => {
   return (
     <div style={contentStyle}>
       <div>
-        <Button onClick={() => setActive(null)}>Show All</Button>
-        <Button onClick={() => setActive(true)}>Show Incomplete</Button>
-        <Button onClick={() => setActive(false)}>Show Complete</Button>
+        <Button onClick={() => setActive(null)} style={{ marginTop: 5 }}>
+          Show All
+        </Button>
+        <Button onClick={() => setActive(true)} style={{ marginTop: 5 }}>
+          Show Incomplete
+        </Button>
+        <Button onClick={() => setActive(false)} style={{ marginTop: 5 }}>
+          Show Complete
+        </Button>
       </div>
       <br />
       <h3>Todo Items</h3>
