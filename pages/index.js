@@ -1,8 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import React from "react";
 import styles from "@/styles/Home.module.css";
-import Header from "@/components/Header";
-import Btn from "@/components/Btn";
+import Howto from "@/components/Howto";
+import { Geist, Geist_Mono } from "next/font/google";
+import Nav from "@/components/Nav";
 
+// Default template fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,28 +15,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function Home() {
+//
+const Home = () => {
   return (
-    <>  
-      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
-        <Header/>
-        <main className={styles.main}>
-          <Btn
-          text = "test"
-          btntype = "default"
-          />
-          <Btn
-          text = "test"
-          btntype = "delete"
-          />
-          <Btn
-          text = "test"
-          btntype = "nav"
-          />
-        </main>
-        <footer className={styles.footer}>
-        </footer>
-      </div>
-    </>
+    <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+      <h1>
+        Individual Assignment 1: <br />
+        To-Do List
+      </h1>
+      <Nav />
+      <Howto />
+    </div>
   );
-}
+};
+
+export default Home;

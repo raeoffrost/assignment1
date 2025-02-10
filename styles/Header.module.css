@@ -1,4 +1,4 @@
-.nav{
+.nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -6,8 +6,10 @@
   padding: 1rem;
   width: 100%;
   font-family: var(--font-geist-mono);
+  text-align: center;
+  border: 2px white solid;
 }
-.nav h1{
+.nav h1 {
   padding: 10px;
 }
 .navOptions .navLinks {
@@ -19,7 +21,6 @@
   text-align: center;
   border: 1px solid white;
   min-width: 300px;
-
 }
 
 .navOptions .navLinks li {
@@ -31,11 +32,10 @@
   text-decoration: none;
 }
 @media (max-width: 900px) {
-  .nav{
+  .nav {
     flex-wrap: wrap;
   }
-  .navOptions{
+  .navOptions {
     margin-top: 10px;
   }
-
 }
